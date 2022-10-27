@@ -8,7 +8,11 @@ import lombok.Setter;
 @Setter
 public class CustomerDTO {
     private Long id;
+
+    @JsonProperty("firstname")
     private String firstName;
+
+    @JsonProperty("lastname")
     private String lastName;
 
     @JsonProperty("customer_url")
